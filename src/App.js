@@ -4,10 +4,20 @@ import { motion } from "framer-motion";
 import Circle from "./components/Circle";
 import List from "./components/List";
 import ScrollTriggered from "./components/ScrollTriggered";
+import TextWriteup from "./components/TextWriteup";
+import WavyText from "./components/WavyText";
 
 export default function App() {
   return (
     <>
+
+      {/* Line Writeup */}
+      <TextWriteup />
+
+      {/* Wavy Text */}
+
+      <WavyText  />
+
       {/* animate */}
       <motion.div animate={{ x: 100, y: 50 }}>
         <Box />
@@ -35,8 +45,9 @@ export default function App() {
       <List />
 
       {/* Scroll Triggered */}
-
       <ScrollTriggered />
+
+    
     </>
   );
 }
