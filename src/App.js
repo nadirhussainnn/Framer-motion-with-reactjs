@@ -6,18 +6,19 @@ import List from "./components/List";
 import ScrollTriggered from "./components/ScrollTriggered";
 import TextWriteup from "./components/TextWriteup";
 import WavyText from "./components/WavyText";
+import EaseInBox from "./components/EaseInBox";
+import EaseOutBox from "./components/EaseOutBox";
 
 export default function App() {
   return (
     <>
-
-      {/* Line Writeup */}
       <TextWriteup />
+      <WavyText />
 
-      {/* Wavy Text */}
+    {/* Ease In */}
 
-      <WavyText  />
-
+    <EaseInBox />
+    <EaseOutBox/>
       {/* animate */}
       <motion.div animate={{ x: 100, y: 50 }}>
         <Box />
@@ -46,8 +47,6 @@ export default function App() {
 
       {/* Scroll Triggered */}
       <ScrollTriggered />
-
-    
     </>
   );
 }
